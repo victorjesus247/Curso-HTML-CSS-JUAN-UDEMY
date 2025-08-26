@@ -126,3 +126,15 @@ img{  /*30.2*/
   transition: all 0.5s ease-in-out;
 }
 
+
+.contenedor a:hover/*31.3*/{
+  background-color: #037bc0;
+  color: #fff;
+  font-size: 40px;
+  border-radius:10px ;
+  padding: 2px;
+}
+
+.contenedor a{  /*para el efecto en las anclas en la barra de navegacion */
+  transition: all 0.2s ease-in-out;
+}
