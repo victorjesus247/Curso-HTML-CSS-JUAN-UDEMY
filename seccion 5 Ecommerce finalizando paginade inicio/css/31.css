@@ -7,8 +7,18 @@ html {
 }
 
 
+body{
+
+  font-family: "Raleway", sans-serif;
+}
+
+
 
 /* globales */
+
+h1,h2,h3{
+font-family: 'Raleway', sans-serif;
+}
 
 a{
   text-decoration: none; /*eliminamos la decoracion del enlace*/
