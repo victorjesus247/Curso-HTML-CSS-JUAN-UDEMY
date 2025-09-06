@@ -175,3 +175,14 @@ h3{
   background-repeat: no-repeat; /*para que no se repita mi imagen*/
   background-size: 100% , 120rem; /*el lineal gradien ponlo al 100% pero el rem de la imagen ponlo a 120 rem*/
 }
+
+.sobre-nosotros-grid{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto-nosotros{
+  flex-basis: 50%; /*es el ancho del elemento*/
+  padding-left: 10rem;
+  color: white;
+}
