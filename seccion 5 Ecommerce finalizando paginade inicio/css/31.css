@@ -72,13 +72,6 @@ img{  /*30.2*/
 
 
 
-.sobre-nosotros{
-    background-color: red;
-    width: 200px;
-    padding: 25px;
-    margin-top: 20px;
-}
-
 
 .nombre-sitio{
   margin-top: 5rem;
@@ -169,4 +162,16 @@ h3{
 
 .contenedor a{  /*para el efecto en las anclas en la barra de navegacion */
   transition: all 0.2s ease-in-out;
+}
+
+
+/*bloque NOSOTROS */
+
+.sobre-nosotros{
+  background-image: linear-gradient( to right , transparent 50% ,  #037bc0 50% , #037bc0 100% ), /*es un degradado lineal */
+  url(../Imagenes-Ecommerce/nosotros.jpg);
+  padding: 10rem 0;
+  background-position: left center ;
+  background-repeat: no-repeat; /*para que no se repita mi imagen*/
+  background-size: 100% , 120rem; /*el lineal gradien ponlo al 100% pero el rem de la imagen ponlo a 120 rem*/
 }
