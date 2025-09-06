@@ -1,17 +1,16 @@
 
 html {
-  box-sizing: border-box;
+  box-sizing: border-box;  /*para cuando agreguemos un width a un elemento y despues le agregamos un padding no modifique el tamano de ese elemento */
   font-size: 62.5%; /*1 rem va a ser = a  10 pixeles , esto es un hack */
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-
 body{
 
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem; /*para que nuestro texto sea un poco mas grande en este caso de 16px esto solo funciona con el hack de 62.5%*/
+  line-height: 1.5;/*para el interlineado */
 }
 
 
@@ -20,13 +19,54 @@ body{
 
 h1,h2,h3{
 font-family: 'Raleway', sans-serif;
+margin: 0 0 5rem 0;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 4rem;
+}
+h3{
+  font-size: 3rem;
 }
 
 a{
   text-decoration: none; /*eliminamos la decoracion del enlace*/
   color: black;
 }
+.contenedor{ /*aqui 29.1*/
 
+  max-width: 120rem;/*esto va a cortar el border y llega a los 1200 px es decir corta la linea de la barra de navegacion*/
+
+  /*ahora necesitamos centrar nuestro contenido asi que podemos hacerlo con lso margenes*/
+  margin: 0 auto; /*de esta forma tanto arriba como abajo el margen es 0 pero a los lados el margen esta automatico esto es para centrar */
+
+  /*0 auto significa arriba y abajo no le des marge , a los lados toma los 1200px y 
+  lo que sobre dejalo centrado El margen auto ajustará automáticamente el contenedor al centro del espacio disponible*/
+
+
+}
+
+.contenedor-navegacion{
+border-top: .1rem solid #e1e1e1;
+
+}
+
+
+.listado-categorias{
+
+display: grid;
+grid-template-columns: repeat(3,1fr); /*30.1*/
+gap: 2rem;  /*30.3*/
+
+}
+
+img{  /*30.2*/
+  max-width: 100%;
+  display: block /*31.4*/;
+}
 
 /* Header y Navegacion */
 
@@ -42,7 +82,7 @@ a{
 
 .nombre-sitio{
   margin-top: 5rem;
-  margin-bottom: 5rem; 
+
   text-align: center;
   font-size: 3rem;  /*se recomienda usar las medidas relativas y no las absolutas aqui tomara el 50% de los 100 px del header*/
 }
@@ -81,6 +121,8 @@ h3{
 
   background-size: cover; /*para que no se ocrte y CUBRA todo el ancho*/
 
+  background-position: center center;
+
   /* DUDA es importante porque los elementos HTML, como un div, tienen dimensiones por defecto solo si contienen algo dentro de ellos, como texto o hijos. Si un elemento no tiene contenido ni dimensiones explícitas, no ocupará espacio en la página, por lo que no se verá nada, ni siquiera una imagen de fondo.
 
   Cuando defines una imagen de fondo usando CSS, la imagen necesita un área en la cual mostrarse. Si el elemento div no tiene dimensiones, no hay espacio para que la imagen se vea.
@@ -88,36 +130,10 @@ h3{
   Piensa en ello como un marco vacío en la pared. Si el marco no tiene tamaño, no podrás ponerle una foto. Al darle dimensiones al div, creas ese "marco" en el cual la imagen puede mostrarse */
 }
 
-.contenedor{ /*aqui 29.1*/
+/*categorias*/
 
-  max-width: 120rem;/*esto va a cortar el border y llega a los 1200 px es decir corta la linea de la barra de navegacion*/
-
-  /*ahora necesitamos centrar nuestro contenido asi que podemos hacerlo con lso margenes*/
-  margin: 0 auto; /*de esta forma tanto arriba como abajo el margen es 0 pero a los lados el margen esta automatico esto es para centrar */
-
-  /*0 auto significa arriba y abajo no le des marge , a los lados toma los 1200px y 
-  lo que sobre dejalo centrado El margen auto ajustará automáticamente el contenedor al centro del espacio disponible*/
-
-
-}
-
-.contenedor-navegacion{
-border-top: .1rem solid #e1e1e1;
-
-}
-
-
-.listado-categorias{
-
-display: grid;
-grid-template-columns: repeat(3,1fr); /*30.1*/
-gap: 2rem;  /*30.3*/
-
-}
-
-img{  /*30.2*/
-  max-width: 100%;
-  display: block /*31.4*/;
+.categoria{
+  padding-top: 5rem;
 }
 
 .categoria h2{ /*31.1*/
