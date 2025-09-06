@@ -1,6 +1,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /*1 rem va a ser = a  10 pixeles , esto es un hack */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -10,6 +11,7 @@ html {
 body{
 
   font-family: "Raleway", sans-serif;
+  font-size: 1.6rem; /*para que nuestro texto sea un poco mas grande en este caso de 16px esto solo funciona con el hack de 62.5%*/
 }
 
 
@@ -39,9 +41,13 @@ a{
 
 
 .nombre-sitio{
-  margin-top: 50px;
-  margin-bottom: 50px; 
+  margin-top: 5rem;
+  margin-bottom: 5rem; 
   text-align: center;
+  font-size: 3rem;  /*se recomienda usar las medidas relativas y no las absolutas aqui tomara el 50% de los 100 px del header*/
+}
+h3{
+  font-size: 3rem;
 }
 
 .nombre-sitio span{
@@ -51,7 +57,7 @@ a{
 
 .navegacion-principal{
 
-  padding: 10px;      /*relleno*/
+  padding: 2rem;      /*relleno*/
   display: flex;
   justify-content: space-between;
 
@@ -68,7 +74,7 @@ a{
   para que se nos muestre es necesario que haya un contenido o unas dimensiones*/
 
 
-  height: 550px;/*ahora con esto ya se nos mostrara la imagen de fondo porque ya tiene
+  height: 55rem;/*ahora con esto ya se nos mostrara la imagen de fondo porque ya tiene
                   unas medidas con la cual mostrarse*/
 
   background-repeat: no-repeat;       /*para que no se nos repita la imagen*/
@@ -84,7 +90,7 @@ a{
 
 .contenedor{ /*aqui 29.1*/
 
-  max-width: 1200px;/*esto va a cortar el border y llega a los 1200 px es decir corta la linea de la barra de navegacion*/
+  max-width: 120rem;/*esto va a cortar el border y llega a los 1200 px es decir corta la linea de la barra de navegacion*/
 
   /*ahora necesitamos centrar nuestro contenido asi que podemos hacerlo con lso margenes*/
   margin: 0 auto; /*de esta forma tanto arriba como abajo el margen es 0 pero a los lados el margen esta automatico esto es para centrar */
@@ -96,7 +102,7 @@ a{
 }
 
 .contenedor-navegacion{
-border-top: 1px solid #e1e1e1;
+border-top: .1rem solid #e1e1e1;
 
 }
 
@@ -105,7 +111,7 @@ border-top: 1px solid #e1e1e1;
 
 display: grid;
 grid-template-columns: repeat(3,1fr); /*30.1*/
-gap: 20px;  /*30.3*/
+gap: 2rem;  /*30.3*/
 
 }
 
@@ -121,8 +127,8 @@ img{  /*30.2*/
 .categoria a{ /*31.2*/
   text-align: center;
   display: block;
-  padding: 20px;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: 2rme;
 }
 
 
