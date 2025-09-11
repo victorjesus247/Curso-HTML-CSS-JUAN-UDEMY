@@ -177,12 +177,13 @@ h3{
 }
 
 .sobre-nosotros-grid{
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /*Flexbox es como una hilera de amigos tomados de la mano. Sirve para acomodar cosas en una sola dirección, ya sea en una fila o en una columna.Uso: Cuando quieres que las cosas se alineen perfectamente, como los botones de una barra de menú, o para centrar una imagen en el medio de la página. Es perfecto para esos trabajos pequeños y ordenados.*/
+  justify-content: flex-end;   
 }
 
-.texto-nosotros{
+.texto-nosotros{   /*si queremos que esto se aplique al texto entonces esta clase debe estar en el padre*/
   flex-basis: 50%; /*es el ancho del elemento*/
-  padding-left: 10rem;
+  padding-left: 10rem;/*este sera el relleno del borde hacia adentro en el texto sobre nosotros en todas las direcciones*/
   color: white;
 }
+
