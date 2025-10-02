@@ -17,6 +17,23 @@ body{
 
 /* globales */
 
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+.btn:hover {
+    background-color: #769c02;
+    cursor: pointer;
+}
+
 h1,h2,h3{
 font-family: 'Raleway', sans-serif;
 margin: 0 0 5rem 0;
@@ -142,31 +159,32 @@ h3{
   display: block;
   padding: 2rem;
   font-size: 2rme;
+  transition: all 0.4s ease-out;;
 }
 
 
 .categoria a:hover/*31.3*/{
   background-color: #037bc0;
   color: #fff;
-  font-size: 40px;
-  border-bottom-right-radius:10px ;
+
 }
-.categoria a /*extra 31.*/ {
-  transition: all 0.5s ease-in-out;
+
+.contenedor .ancla{  /*para el efecto en las anclas en la barra de navegacion */
+  transition: all 0.3s ease-out;
 }
 
 
-.contenedor a:hover/*31.3*/{
+.contenedor .ancla:hover/*31.3*/{
   background-color: #037bc2;
   color: #fff;
-  font-size: 40px;
-  border-radius:10px ;
-  padding: 2px;
+  text-decoration: none;
+  font-size: 3rem;
+  border-radius: 4rem;
+  padding: 0 3rem 0 3rem; /*como las agujas del relog*/
+
+
 }
 
-.contenedor a{  /*para el efecto en las anclas en la barra de navegacion */
-  transition: all 0.2s ease-in-out;
-}
 
 
 /*bloque NOSOTROS */
@@ -204,6 +222,7 @@ h3{
 .texto-producto{
   text-align: center;
   color: #fff;
+  padding: 2rem;
 }
 
 .texto-producto h3{
@@ -219,8 +238,6 @@ h3{
   font-weight: 900;
 }
 
-.texto-producto a{
 
-}
 
 
