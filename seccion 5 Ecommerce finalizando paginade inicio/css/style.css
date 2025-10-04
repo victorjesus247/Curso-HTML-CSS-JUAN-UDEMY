@@ -215,6 +215,45 @@ h3{
   padding-top: 5rem; 
 }
 
+.listado-productos{ /*esta clase agarra al primer nivel de hijos */
+  display: grid;  /*en esta parte habilitamos grid para los elementos hijos de esta clase*/
+  grid-template-columns: repeat(6,1fr); /*aqui le decimos en cuantas partes de va a distribuir*/
+  /* column-gap: 2rem; esto es para los espacios entre colunnas */
+  /* row-gap: 2rem;esto es para los espacios entre filas */
+  gap:2rem;
+}
+
+.producto:nth-child(1){ /*de esta forma seleccionamos a los hijos individualmente*/
+  grid-column-start: 1; /*le decimos que inicie en el grid 1 */
+  grid-column-end: 7   /*y termine en el grid 7*/
+}
+.producto:nth-child(2){
+  grid-column-start: 1;
+  grid-column-end: 4;
+  
+}
+.producto:nth-child(3){
+  grid-column-start: 4;
+  grid-column-end: 7;
+  
+}
+.producto:nth-child(4 ){
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+}
+.producto:nth-child(5 ){
+  grid-column-start: 3;
+  grid-column-end: 5;
+  
+}
+.producto:nth-child(6 ){
+  grid-column-start: 5;
+  grid-column-end: 7;
+  
+}
+/*recuerde que display:grid automaticametne va creando rows cuando las column se completan*/
+
 .producto{
   background-color: #037bc0;
 }
