@@ -100,7 +100,7 @@ img{  /*30.2*/
   margin-top: 5rem;
 
   text-align: center;
-  font-size: 3rem;  /*se recomienda usar las medidas relativas y no las absolutas aqui tomara el 50% de los 100 px del header*/
+  font-size: 5rem;  /*se recomienda usar las medidas relativas y no las absolutas aqui tomara el 50% de los 100 px del header*/
 }
 h3{
   font-size: 3rem;
@@ -244,6 +244,7 @@ h3{
   height: 30rem;
   width: 100%;
   object-fit: cover;
+  
 }
 .producto:nth-child(3){
   grid-column-start: 4;
@@ -291,5 +292,16 @@ h3{
 }
 
 
+/*---------footer---------*/
 
+.site-footer{
+  border-top: 1px solid #e1e1e1;
+  margin-top: 4rem;
+  padding: 4rem;
+}
 
+.grid-footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
