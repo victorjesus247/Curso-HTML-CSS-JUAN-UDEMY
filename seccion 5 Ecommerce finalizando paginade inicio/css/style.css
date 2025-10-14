@@ -298,10 +298,22 @@ h3{
   border-top: 1px solid #e1e1e1;
   margin-top: 4rem;
   padding: 4rem;
+  text-align: center;
 }
 
 .grid-footer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 2rem;
+}
+
+.footer-menu a{
+  display: block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 4rem;
 }
