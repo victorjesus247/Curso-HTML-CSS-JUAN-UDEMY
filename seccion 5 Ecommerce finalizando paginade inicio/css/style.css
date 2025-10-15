@@ -316,4 +316,20 @@ h3{
 .copyright{
   text-align: center;
   margin-top: 4rem;
+}  
+
+.contenido-nosotros{ /*recordemos que esta clase funciona en nosotros.html , es para colocar 2 colunnas 1fr y 2fr una mide 1 fraccion y la otra 2 fracciones , nos sirve para colocar la imagen d elos muebles en 1fr y los textos en 2fr */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  grid-template-columns: repeat(auto-fit,minmax(25rem , 1fr));
+  column-gap: 2rem;
+
+}
+
+.informacion-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
 }
